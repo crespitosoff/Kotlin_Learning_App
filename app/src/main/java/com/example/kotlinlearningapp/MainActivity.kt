@@ -1,4 +1,18 @@
 package com.example.kotlinlearningapp
 
-class MainActivity {
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import com.example.kotlinlearningapp.ui.navigation.AppNavigation
+import com.example.kotlinlearningapp.ui.theme.KotlinLearningAppTheme
+
+class MainActivity: ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            KotlinLearningAppTheme {
+                AppNavigation()
+            }
+        }
+    }
 }

@@ -1,4 +1,9 @@
 package com.example.kotlinlearningapp.data.model
 
-class Topic {
-}
+data class Topic(
+    val id: Int,
+    val title: String,
+    val theory: String,
+    val code: String,
+    val questions: List<Question> = emptyList()
+)
