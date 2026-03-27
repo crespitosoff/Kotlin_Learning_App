@@ -60,7 +60,7 @@ fun TopicDetailScreen(
 
                 Button(
                     onClick = {
-                        navController.navigate("quiz/\$topicId")
+                        navController.navigate("quiz/$topicId")
                     },
                     modifier = Modifier.padding(top = 20.dp)
                 ) {

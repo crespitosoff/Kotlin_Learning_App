@@ -24,7 +24,7 @@ fun TopicListScreen(
     Scaffold(
         topBar = {
             AppToolbar(
-                title = "Topics: \$level",
+                title = "Topics: $level",
                 canNavigateBack = true,
                 navController = navController
             )
@@ -35,7 +35,7 @@ fun TopicListScreen(
             .padding(padding)
             .padding(16.dp)) {
             Text(
-                text = "Level: \$level",
+                text = "Level: $level",
                 style = MaterialTheme.typography.headlineSmall
             )
             Spacer(modifier = Modifier.height(10.dp))
@@ -46,7 +46,7 @@ fun TopicListScreen(
                             .fillMaxWidth()
                             .padding(8.dp)
                             .clickable {
-                                navController.navigate("detail/\${topic.id}")
+                                navController.navigate("detail/${topic.id}")
                             }
                     ) {
                         Text(

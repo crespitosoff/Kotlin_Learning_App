@@ -68,10 +68,10 @@ fun QuizScreen(
                     style = MaterialTheme.typography.headlineMedium
                 )
                 Spacer(modifier = Modifier.height(16.dp))
-                Text("Score: \$score / \${questions.size}")
+                Text("Score: $score / ${questions.size}")
                 Spacer(modifier = Modifier.height(16.dp))
                 val percentage = (score * 100) / questions.size
-                Text("Percentage: \$percentage%")
+                Text("Percentage: $percentage%")
                 Spacer(modifier = Modifier.height(20.dp))
                 if (percentage >= 70) {
                     Text(" Well Done!")
